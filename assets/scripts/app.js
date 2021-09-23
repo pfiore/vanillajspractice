@@ -1,8 +1,6 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
-
-
 function getUserInputNumber() {
     return parseInt(userInput.value);
 }
@@ -13,7 +11,6 @@ function writeLogOutput(operator, resultBeforeCalc, caclNumber) {
     outputResult(currentResult, calcDescription);
 
 }
-
 
 function add() {
     const enteredNumber = getUserInputNumber();
@@ -42,10 +39,6 @@ function divide() {
     currentResult = currentResult / enteredNumber;
     writeLogOutput('/', initialResult, enteredNumber);
 }
-
-
-
-
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
